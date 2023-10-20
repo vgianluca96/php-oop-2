@@ -12,4 +12,6 @@ $product5 = new game('gioco per gatti', '€5.99', 'Lorem ipsum', 'gatti', 'gioc
 
 $product6 = new food('cibo per cani', '€19.99', 'Lorem ipsum', 'cani', 'cibo', '150g');
 
+
+
 $products = array($product1, $product2, $product3, $product4, $product5, $product6);

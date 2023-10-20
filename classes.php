@@ -18,7 +18,6 @@ class product
     }
 }
 
-
 class game extends product
 {
 
