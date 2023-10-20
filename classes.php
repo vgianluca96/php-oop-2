@@ -2,6 +2,7 @@
 
 class product
 {
+    public $img = 'https://picsum.photos/400/450';
     public $name;
     public $price;
     public $description;

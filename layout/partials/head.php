@@ -24,7 +24,7 @@
                             <a class="nav-link" href="./about.php">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacts</a>
+                            <a class="nav-link" href="./contacts.php">Contacts</a>
                         </li>
                 </div>
             </div>
