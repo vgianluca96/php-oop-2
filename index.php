@@ -1,21 +1,12 @@
 <?php
 
+include __DIR__ . './classes.php';
+include __DIR__ . './db/db.php';
 
-class product
-{
-    public $category;
-    public $price;
-    public $description;
 
-    function __construct($category, $price, $description)
-    {
-        $this->category  = $category;
-        $this->price = $price;
-        $this->description = $description;
-    }
-}
 
-$product = new product('Cat', '19.99', 'Lorem ipsum');
+
+
 ?>
 
 <!DOCTYPE html>
@@ -33,8 +24,9 @@ $product = new product('Cat', '19.99', 'Lorem ipsum');
 
     <div class="container py-4">
 
-        <?php
-        var_dump($product);
+        <?php foreach ($products as $product) {
+            var_dump($product);
+        }
         ?>
     </div>
 
