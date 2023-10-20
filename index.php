@@ -1,5 +1,21 @@
 <?php
-$message = 'ciao';
+
+
+class product
+{
+    public $category;
+    public $price;
+    public $description;
+
+    function __construct($category, $price, $description)
+    {
+        $this->category  = $category;
+        $this->price = $price;
+        $this->description = $description;
+    }
+}
+
+$product = new product('Cat', '19.99', 'Lorem ipsum');
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +34,7 @@ $message = 'ciao';
     <div class="container py-4">
 
         <?php
-        echo $message;
+        var_dump($product);
         ?>
     </div>
 
