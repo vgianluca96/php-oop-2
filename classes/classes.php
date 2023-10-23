@@ -1,5 +1,14 @@
 <?php
 
+trait ProductImage
+{
+    public function getImage(): string
+    {
+        return $this->img;
+    }
+}
+
+
 class Product
 {
     //public $img = 'https://picsum.photos/400/450';
@@ -37,10 +46,7 @@ class Game extends Product
         $this->img = $img;
     }
 
-    public function getImage(): string
-    {
-        return $this->img;
-    }
+    use ProductImage;
 }
 
 class Food extends Product
@@ -56,10 +62,7 @@ class Food extends Product
         $this->img = $img;
     }
 
-    public function getImage(): string
-    {
-        return $this->img;
-    }
+    use ProductImage;
 }
 
 class Bed extends Product
@@ -76,8 +79,5 @@ class Bed extends Product
         $this->img = $img;
     }
 
-    public function getImage(): string
-    {
-        return $this->img;
-    }
+    use ProductImage;
 }
