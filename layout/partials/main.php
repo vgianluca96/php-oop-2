@@ -11,7 +11,7 @@
                         <img src="<?php echo $product->img; ?>" alt="" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">
-                                <?php echo ucwords($product->name); ?>
+                                <?php echo ucwords($product->getName()); ?>
                             </h5>
                             <p class="card-text">
                                 <strong>Prezzo: </strong><?php echo $product->price; ?> <br>

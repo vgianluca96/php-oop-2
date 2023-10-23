@@ -3,7 +3,7 @@
 class Product
 {
     public $img = 'https://picsum.photos/400/450';
-    public $name;
+    protected $name;
     public $price;
     public $description;
     public $category;
@@ -16,6 +16,11 @@ class Product
         $this->description = $description;
         $this->category = $category;
         $this->type = $type;
+    }
+
+    public function getName(): string
+    {
+        return $this->name;
     }
 }
 
