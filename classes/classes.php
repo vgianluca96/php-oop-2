@@ -1,6 +1,6 @@
 <?php
 
-class product
+class Product
 {
     public $img = 'https://picsum.photos/400/450';
     public $name;
@@ -19,7 +19,7 @@ class product
     }
 }
 
-class game extends product
+class Game extends Product
 {
 
     public $dimensions;
@@ -31,7 +31,7 @@ class game extends product
     }
 }
 
-class food extends product
+class Food extends Product
 {
     public $weight;
 
@@ -43,7 +43,7 @@ class food extends product
     }
 }
 
-class bed extends product
+class Bed extends Product
 {
     public $material;
     public $dimensions;
