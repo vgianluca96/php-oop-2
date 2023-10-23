@@ -44,4 +44,20 @@
             ?>
         </div>
     </div>
+
+    <?php
+
+    try {
+        $genericProd = new Product('prodotto generico', '€19.99', 'Lorem ipsum', 'cani', 'gioco');
+        $genericProd->category = 'canguri';
+        $genericProd->verifyCategory();
+    } catch (Exception $error) {
+        echo $error->getMessage();
+        echo '<br>';
+        echo $error->getFile();
+        echo '<br>';
+        echo $error->getTraceAsString();
+    }
+
+    ?>
 </main>

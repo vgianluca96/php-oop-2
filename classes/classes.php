@@ -31,6 +31,13 @@ class Product
     {
         return $this->name;
     }
+
+    public function verifyCategory()
+    {
+        if ($this->category != 'cani' && $this->category != 'gatti') {
+            throw new Exception('Categoria di prodotto non valida');
+        }
+    }
 }
 
 class Game extends Product
