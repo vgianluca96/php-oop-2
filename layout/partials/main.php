@@ -8,7 +8,7 @@
             ?>
                 <div class="col">
                     <div class="card">
-                        <img src="<?php echo $product->img; ?>" alt="" class="card-img-top">
+                        <img src="<?php echo $product->getImage(); ?>" alt="" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">
                                 <?php echo ucwords($product->getName()); ?>
